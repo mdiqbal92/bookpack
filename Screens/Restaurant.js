@@ -7,7 +7,7 @@ const Restaurant = () => {
     return (
         
         <View>
-            <Text>Restaurant</Text>
+            <Text>Restaurant....Check new</Text>
         </View>    
         
     );
