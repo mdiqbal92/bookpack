@@ -120,7 +120,7 @@ const Restaurant = ({ route, navigation }) => {
                             backgroundColor: COLORS.lightGray3
                         }}
                     >
-                        <Text style={{ ...FONTS.h3 }}>{restaurant?.name}</Text>
+                        <Text style={{ ...FONTS.h4 }}>{restaurant?.name}</Text>
                     </View>
                 </View>
 
@@ -234,7 +234,7 @@ const Restaurant = ({ route, navigation }) => {
                                     paddingHorizontal: SIZES.padding * 2
                                 }}
                             >
-                                <Text style={{ marginVertical: 10, textAlign: 'center', ...FONTS.h2 }}>{item.name} - {item.price.toFixed(2)}</Text>
+                                <Text style={{ marginVertical: 10, textAlign: 'center', ...FONTS.h3 }}>{item.name} - {item.price.toFixed(2)}</Text>
                                 <Text style={{ ...FONTS.body3 }}>{item.description}</Text>
                             </View>
 
@@ -371,8 +371,8 @@ const Restaurant = ({ route, navigation }) => {
                                 source={icons.master_card}
                                 resizeMode="contain"
                                 style={{
-                                    width: 20,
-                                    height: 20,
+                                    width: 25,
+                                    height: 25,
                                     tintColor: COLORS.darkgray
                                 }}
                             />

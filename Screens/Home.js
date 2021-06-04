@@ -348,7 +348,7 @@ function onSelectCategory(category) {
                     style={{
                         // padding: SIZES.padding,
                         paddingHorizontal: SIZES.padding * 2,
-                        backgroundColor: (selectedCategory?.id == item.id) ? COLORS.primary : COLORS.white,
+                        backgroundColor: (selectedCategory?.id == item.id) ? COLORS.badge : COLORS.white,
                         borderRadius: SIZES.radius,
                         alignItems: "center",
                         justifyContent: "center",
@@ -395,7 +395,7 @@ function onSelectCategory(category) {
 
       return (
             <View style={{ padding: SIZES.padding * 2 }}>
-                <Text style={{ ...FONTS.h1 }}>Categories</Text>
+                <Text style={{ ...FONTS.h2 }}>Categories</Text>
                      <FlatList
                     data={categories}
                     horizontal
@@ -466,7 +466,7 @@ function onSelectCategory(category) {
                         style={{
                             height: 20,
                             width: 20,
-                            tintColor: COLORS.primary,
+                            tintColor: COLORS.badge,
                             marginRight: 10
                         }}
                     />
@@ -487,7 +487,7 @@ function onSelectCategory(category) {
                                         key={categoryId}
                                     >
                                         <Text style={{ ...FONTS.body3 }}>{getCategoryNameById(categoryId)}</Text>
-                                        <Text style={{ ...FONTS.h3, color: COLORS.darkgray }}> . </Text>
+                                        <Text style={{ ...FONTS.h4, color: COLORS.darkgray }}> . </Text>
                                     </View>
                                 )
                             })

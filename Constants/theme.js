@@ -3,7 +3,9 @@ const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
     // base colors
-    primary: "#FC6D3F", // orange
+    
+    badge:"#a8c66c",
+    primary: "#1b6535", // dark green
     secondary: "#CDCDD2",   // gray
 
     // colors
