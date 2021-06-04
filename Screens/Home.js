@@ -433,7 +433,7 @@ function onSelectCategory(category) {
                         }}
                     />
 
-                    <View
+                     {/* <View
                         style={{
                             position: 'absolute',
                             bottom: 0,
@@ -445,10 +445,10 @@ function onSelectCategory(category) {
                             alignItems: 'center',
                             justifyContent: 'center',
                             ...styles.shadow
-                        }}
+                        }} 
                     >
                         <Text style={{ ...FONTS.h4 }}>{item.duration}</Text>
-                    </View>
+                     </View>  */}
                 </View>
 
                 {/* Restaurant Info */}
