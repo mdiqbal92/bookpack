@@ -27,55 +27,30 @@ const Home = ({navigation}) => {
     const categoryData = [
         {
             id: 1,
-            name: "Rice",
+            name: "Programing",
             // icon: icons.rice_bowl,
         },
         {
             id: 2,
-            name: "Noodles",
+            name: "Thriller",
             // icon: icons.noodle,
         },
         {
             id: 3,
-            name: "Hot Dogs",
+            name: "Travel",
             // icon: icons.hotdog,
         },
         {
             id: 4,
-            name: "Salads",
+            name: "Novel",
             // icon: icons.salad,
         },
         {
             id: 5,
-            name: "Burgers",
+            name: "Technology",
             // icon: icons.hamburger,
         },
-        {
-            id: 6,
-            name: "Pizza",
-            // icon: icons.pizza,
-        },
-        {
-            id: 7,
-            name: "Snacks",
-            // icon: icons.fries,
-        },
-        {
-            id: 8,
-            name: "Sushi",
-            // icon: icons.sushi,
-        },
-        {
-            id: 9,
-            name: "Desserts",
-            // icon: icons.donut,
-        },
-        {
-            id: 10,
-            name: "Drinks",
-            // icon: icons.drink,
-        },
-
+        
     ]
 
     // price rating
@@ -86,11 +61,11 @@ const Home = ({navigation}) => {
     const restaurantData = [
         {
             id: 1,
-            name: "ByProgrammers Burger",
+            name: "Programming Choiddo Goshthi",
             rating: 4.8,
-            categories: [5, 7],
+            categories: [1,5],
             priceRating: affordable,
-            photo: images.burger_restaurant_1,
+            photo: images.programming,
             duration: "30 - 45 min",
             location: {
                 latitude: 1.5347282806345879,
@@ -103,24 +78,24 @@ const Home = ({navigation}) => {
             menu: [
                 {
                     menuId: 1,
-                    name: "Crispy Chicken Burger",
-                    photo: images.crispy_chicken_burger,
-                    description: "Burger with crispy chicken, cheese and lettuce",
+                    name: "Habluder jonno programming",
+                    photo: images.programming2,
+                    description: "Programming books for the beginners",
                     calories: 200,
                     price: 10
                 },
                 {
                     menuId: 2,
-                    name: "Crispy Chicken Burger with Honey Mustard",
-                    photo: images.honey_mustard_chicken_burger,
-                    description: "Crispy Chicken Burger with Honey Mustard Coleslaw",
+                    name: "Programming er bolod to boss",
+                    photo: images.programming3,
+                    description: "Programming er bolod to boss the journey",
                     calories: 250,
                     price: 15
                 },
                 {
                     menuId: 3,
-                    name: "Crispy Baked French Fries",
-                    photo: images.baked_fries,
+                    name: "Recharge your down battery",
+                    photo: images.programming4,
                     description: "Crispy Baked French Fries",
                     calories: 194,
                     price: 8
@@ -129,11 +104,11 @@ const Home = ({navigation}) => {
         },
         {
             id: 2,
-            name: "ByProgrammers Pizza",
+            name: "Travel",
             rating: 4.8,
-            categories: [2, 4, 6],
+            categories: [4],
             priceRating: expensive,
-            photo: images.pizza_restaurant,
+            photo: images.travel,
             duration: "15 - 20 min",
             location: {
                 latitude: 1.556306570595712,
@@ -146,33 +121,33 @@ const Home = ({navigation}) => {
             menu: [
                 {
                     menuId: 4,
-                    name: "Hawaiian Pizza",
-                    photo: images.hawaiian_pizza,
-                    description: "Canadian bacon, homemade pizza crust, pizza sauce",
+                    name: "Journeys of a lifetime",
+                    photo: images.travel1,
+                    description: "Adventurous Lifetime journeys",
                     calories: 250,
                     price: 15
                 },
                 {
                     menuId: 5,
-                    name: "Tomato & Basil Pizza",
-                    photo: images.pizza,
+                    name: "Wild by Nature",
+                    photo: images.travel2,
                     description: "Fresh tomatoes, aromatic basil pesto and melted bocconcini",
                     calories: 250,
                     price: 20
                 },
                 {
                     menuId: 6,
-                    name: "Tomato Pasta",
-                    photo: images.tomato_pasta,
-                    description: "Pasta with fresh tomatoes",
+                    name: "Tibbote soua bochor",
+                    photo: images.travel3,
+                    description: "Adventurous Journey at Tibbot",
                     calories: 100,
                     price: 10
                 },
                 {
                     menuId: 7,
-                    name: "Mediterranean Chopped Salad ",
-                    photo: images.salad,
-                    description: "Finely chopped lettuce, tomatoes, cucumbers",
+                    name: "Kinnor Deshe ",
+                    photo: images.travel4,
+                    description: "Kinnor desher adventure jatra",
                     calories: 100,
                     price: 10
                 }
@@ -180,11 +155,11 @@ const Home = ({navigation}) => {
         },
         {
             id: 3,
-            name: "ByProgrammers Hotdogs",
+            name: "Thriller Books",
             rating: 4.8,
             categories: [3],
             priceRating: expensive,
-            photo: images.hot_dog_restaurant,
+            photo: images.thriller,
             duration: "20 - 25 min",
             location: {
                 latitude: 1.5238753474714375,
@@ -197,9 +172,9 @@ const Home = ({navigation}) => {
             menu: [
                 {
                     menuId: 8,
-                    name: "Chicago Style Hot Dog",
-                    photo: images.chicago_hot_dog,
-                    description: "Fresh tomatoes, all beef hot dogs",
+                    name: "Pishach bari",
+                    photo: images.thriller1,
+                    description: "Pishach Bari Rohosso",
                     calories: 100,
                     price: 20
                 }
@@ -207,11 +182,11 @@ const Home = ({navigation}) => {
         },
         {
             id: 4,
-            name: "ByProgrammers Sushi",
+            name: "Novel",
             rating: 4.8,
-            categories: [8],
+            categories: [3],
             priceRating: expensive,
-            photo: images.japanese_restaurant,
+            photo: images.novel,
             duration: "10 - 15 min",
             location: {
                 latitude: 1.5578068150528928,
@@ -224,9 +199,9 @@ const Home = ({navigation}) => {
             menu: [
                 {
                     menuId: 9,
-                    name: "Sushi sets",
-                    photo: images.sushi,
-                    description: "Fresh salmon, sushi rice, fresh juicy avocado",
+                    name: "Krishnopokkho",
+                    photo: images.novel1,
+                    description: "A famous novel by Humayun Ahmed",
                     calories: 100,
                     price: 50
                 }
@@ -234,11 +209,11 @@ const Home = ({navigation}) => {
         },
         {
             id: 5,
-            name: "ByProgrammers Cuisine",
+            name: "Technology",
             rating: 4.8,
-            categories: [1, 2],
+            categories: [5],
             priceRating: affordable,
-            photo: images.noodle_shop,
+            photo: images.technology,
             duration: "15 - 20 min",
             location: {
                 latitude: 1.558050496260768,
@@ -251,86 +226,33 @@ const Home = ({navigation}) => {
             menu: [
                 {
                     menuId: 10,
-                    name: "Kolo Mee",
-                    photo: images.kolo_mee,
-                    description: "Noodles with char siu",
+                    name: "Anuron Golok",
+                    photo: images.technology1,
+                    description: "Boost your brain..know the technology",
                     calories: 200,
                     price: 5
                 },
                 {
                     menuId: 11,
-                    name: "Sarawak Laksa",
-                    photo: images.sarawak_laksa,
-                    description: "Vermicelli noodles, cooked prawns",
+                    name: "Hopotronik sukh dukkho",
+                    photo: images.technology2,
+                    description: "Stroy of robot who had feelings",
                     calories: 300,
                     price: 8
                 },
                 {
                     menuId: 12,
                     name: "Nasi Lemak",
-                    photo: images.nasi_lemak,
-                    description: "A traditional Malay rice dish",
+                    photo: images.technology3,
+                    description: "Nayra, The mysterious girl ",
                     calories: 300,
                     price: 8
                 },
-                {
-                    menuId: 13,
-                    name: "Nasi Briyani with Mutton",
-                    photo: images.nasi_briyani_mutton,
-                    description: "A traditional Indian rice dish with mutton",
-                    calories: 300,
-                    price: 8
-                },
+                
 
             ]
-        },
-        {
-
-            id: 6,
-            name: "ByProgrammers Dessets",
-            rating: 4.9,
-            categories: [9, 10],
-            priceRating: affordable,
-            photo: images.kek_lapis_shop,
-            duration: "35 - 40 min",
-            location: {
-                latitude: 1.5573478487252896,
-                longitude: 110.35568783282145,
-            },
-            courier: {
-                avatar: images.avatar_1,
-                name: "Jessie"
-            },
-            menu: [
-                {
-                    menuId: 12,
-                    name: "Teh C Peng",
-                    photo: images.teh_c_peng,
-                    description: "Three Layer Teh C Peng",
-                    calories: 100,
-                    price: 2
-                },
-                {
-                    menuId: 13,
-                    name: "ABC Ice Kacang",
-                    photo: images.ice_kacang,
-                    description: "Shaved Ice with red beans",
-                    calories: 100,
-                    price: 3
-                },
-                {
-                    menuId: 14,
-                    name: "Kek Lapis",
-                    photo: images.kek_lapis,
-                    description: "Layer cakes",
-                    calories: 300,
-                    price: 20
-                }
-            ]
-
         }
-
-
+        
     ]
 
     const [categories, setCategories] = React.useState(categoryData)
