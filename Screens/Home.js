@@ -12,7 +12,7 @@ import {
 import { icons, images, SIZES, COLORS, FONTS } from '../constants'
 
 //? Home Component //
-const Home = () => {
+const Home = ({navigation}) => {
 
    // Dummy Datas
 
